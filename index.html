@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>BookBazar</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Book Title</h2>
+            <h6>Author</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos repudiandae officiis fugit nisi vero fugiat optio minima est hic mollitia magnam cumque asperiores ullam totam distinctio provident, beatae odit.</p>
+            <button id="delete-button" class="delete-button">Delete</button>
+        </div>
+
+
+        <div class="book-container">
+            <h2>Book Title</h2>
+            <h6>Author</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos repudiandae officiis fugit nisi vero fugiat optio minima est hic mollitia magnam cumque asperiores ullam totam distinctio provident, beatae odit.</p>
+            <button  id="delete-button" class="delete-button">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay">
+    </div>
+
+    <div class="add-popup" id="add-popup">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" class="popup-input" id="popup-input-title" placeholder="Book Title"><br>
+            <input type="text" class="popup-input" id="popup-input-author" placeholder="Author"><br>
+            <textarea id="popup-input-desc" class="popup-input" cols="30" rows="10" placeholder="Descripton"></textarea>
+            <div >
+                <button class="action-buttons" id="add-book">Add</button>
+                <button class="action-buttons" id="cancel-popup" onclick="cancelPopup(event)">Cancel</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <button class="add-button" id="add-popup-button" onclick="addBookPopup()">+</button>
+
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>

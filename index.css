@@ -1,0 +1,106 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar{
+    /* position: absolute; */
+    background-color:  #fe097b;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+}
+.container{
+    padding: 15px;
+    display: flex;
+}
+.book-container{
+    margin: 10px;
+    width: 30%;
+    background-color: #cadefc;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.delete-button{
+    border: none 2px black;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.589);
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.add-button{
+    position: fixed;
+    left: 90%;
+    top: 90%;
+    padding: 15px;
+    border-radius: 50%;
+    border: none ;
+    background-color:  rgb(218, 93, 40);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.popup-overlay{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
+.add-popup{
+    position: absolute;
+    background-color: cadetblue;
+    width: 50%;
+    padding: 40px;
+    top:20%;
+    left: 20%;
+    border-radius: 20px;
+    z-index: 2;
+    display: none;
+
+}
+.popup-input{
+    background:transparent;
+    border: none;
+    border-bottom: solid 2px black;
+    margin: 20px;
+    color: black;
+    padding: 10px;
+    font-size: 1rem;
+}
+.popup-input::placeholder{
+    color: black;
+}
+.popup-input:focus{
+    outline: none;
+}
+
+
+.action-buttons{
+    background-color: rgb(218, 93, 40);
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+    cursor: pointer;
+    font-weight: bold;
+}
